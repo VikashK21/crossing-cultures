@@ -1,64 +1,79 @@
 "use client"
-// import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Home() {
 
-  const router = useRouter()
 
-  const handleOnClick = () => {
-    router.push('#about')
-  }
+  useEffect(() => {
+    // Check if there's a hash in the URL on page load
+    const hash = window.location.hash;
+    if (hash) {
+      const elementId = hash.substring(1); // Remove the '#' character
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
 
 
   return (
-    <main>
-      <div className="container mx-auto px-5 text-right">
-        <button onClick={handleOnClick}>About</button>
+    <>
+      <div className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
+        <div className="flex align-middle justify-center">
+          <p>opening content</p>
+        </div>
       </div>
-      <div className="container mx-auto px-5">
-        <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-          <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-            Blog.
-          </h1>
-          <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">To The World From India</h4>
-
-          <a href="https://w0.peakpx.com/wallpaper/113/225/HD-wallpaper-world-map-americas-europe-map-africa-world-australasia.jpg" className="underline hover:text-blue-600 duration-200 transition-colors" >View World Map</a>
-        </section>
-        <section>
-          <div className="mb-8 md:mb-16 text-green-600">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
+      <div className="container flex flex-col gap-2 mx-auto px-5">
+        <section id="person1" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
+          <div className="flex flex-col align-middle justify-center">
+            <p>person 1</p>
+            <div className="mb-8 md:mb-16 text-green-600">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
+            </div>
           </div>
         </section>
-        <section>
-          <div className="mb-8 md:mb-16 text-yellow-300">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
+        <section id="person2" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
+          <div className="flex flex-col align-middle justify-center">
+            <p>person 2</p>
+            <div className="mb-8 md:mb-16 text-yellow-300">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
+            </div>
           </div>
         </section>
-        <section>
-          <div className="mb-8 md:mb-16 text-blue-400">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
+        <section id="person3" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
+          <div className="flex flex-col align-middle justify-center">
+            <p>person 3</p>
+            <div className="mb-8 md:mb-16 text-blue-400">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
+            </div>
           </div>
         </section>
-        <section>
-          <div className="mb-8 md:mb-16 text-purple-500">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
+        <section id="person4" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
+          <div className="flex flex-col align-middle justify-center">
+            <p>person 4</p>
+            <div className="mb-8 md:mb-16 text-purple-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
+            </div>
           </div>
         </section>
-        <section>
+        <section id="person5" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
+          <div className="flex flex-col align-middle justify-center">
+            <p>person 5</p>
+            <div className="mb-8 md:mb-16 text-orange-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
+            </div>
+          </div>
+        </section>
+      </div>
+      <div className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
+        <div className="flex flex-col align-middle justify-center">
+          <p>resource content</p>
           <div className="mb-8 md:mb-16">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quae est debitis praesentium officia voluptas eum vero reiciendis soluta? Sequi qui omnis rem deserunt corporis perspiciatis, nulla id quos quod?
           </div>
-        </section>
-        <section id="about">
-          <div className="mb-8 md:mb-16 text-orange-500">
-            <h1>
-              All about the people we know.
-            </h1>
-          </div>
-        </section>
-
+        </div>
       </div>
-    </main>
+    </>
   );
 }
