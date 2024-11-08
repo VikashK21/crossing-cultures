@@ -25,41 +25,41 @@ export default function Home() {
         </div>
       </div>
       <div className="container flex flex-col gap-2 mx-auto px-5">
-        <section id="person1" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
+        <section id="maghizhan" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
           <div className="flex flex-col align-middle justify-center">
-            <p>person 1</p>
+            <p>Maghizhan</p>
             <div className="mb-8 md:mb-16 text-green-600">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
             </div>
           </div>
         </section>
-        <section id="person2" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
+        <section id="rhea" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
           <div className="flex flex-col align-middle justify-center">
-            <p>person 2</p>
+            <p>Rhea</p>
             <div className="mb-8 md:mb-16 text-yellow-300">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
             </div>
           </div>
         </section>
-        <section id="person3" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
+        <section id="aishupriya" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
           <div className="flex flex-col align-middle justify-center">
-            <p>person 3</p>
+            <p>Aishupriya</p>
             <div className="mb-8 md:mb-16 text-blue-400">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
             </div>
           </div>
         </section>
-        <section id="person4" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
+        <section id="nesara" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
           <div className="flex flex-col align-middle justify-center">
-            <p>person 4</p>
+            <p>Nesara</p>
             <div className="mb-8 md:mb-16 text-purple-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
             </div>
           </div>
         </section>
-        <section id="person5" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
+        <section id="vikash" className="border rounded-md max-w-7xl lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8 mx-auto py-5 px-5">
           <div className="flex flex-col align-middle justify-center">
-            <p>person 5</p>
+            <p>Vikash</p>
             <div className="mb-8 md:mb-16 text-orange-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fugit recusandae perferendis unde voluptates accusamus? Possimus in ullam, perspiciatis voluptatum temporibus, id, adipisci ut eligendi assumenda aliquid porro? Debitis rerum modi earum ipsa. Accusantium distinctio animi earum, saepe cumque maiores, explicabo ad consequatur reprehenderit quam unde! Sit amet vitae eos!
             </div>
