@@ -25,17 +25,19 @@ export default function Maghizhan() {
                 Coincidentally, there are other changes at the same time, including a change in plant processing
                 and stone tool technologies such as the Microliths. (Max-Planck-Gesellschaft, 2013)
             </div>
-            <div className="flex justify-center gap-5">
+            <div className="flex flex-col md:flex-row md:justify-center md:gap-5">
                 <Image
                     src="/maghi1.jpg"
                     width={400}
                     height={400}
+                    className="w-full md:w-1/2 lg:w-[400px] h-auto"
                     alt="img"
                 />
                 <Image
                     src="/maghi2.jpg"
                     width={400}
                     height={400}
+                    className="w-full md:w-1/2 lg:w-[400px] h-auto"
                     alt="img"
                 />
             </div>
