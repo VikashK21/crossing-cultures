@@ -12,7 +12,7 @@ export default function Navbar() {
     return (
         <div className='container sticky top-0 py-5 text-lg font-semibold flex px-5 bg-white'>
             <div className='container'>
-                <div className='flex gap-5'>
+                <button className='flex gap-5' onClick={handleOnClick("/")}>
                     <div>
                         <Image
                             src="/logo.jpg"
@@ -22,7 +22,7 @@ export default function Navbar() {
                         />
                     </div>
                     <div>To The World From India</div>
-                </div>
+                </button>
             </div>
             <div className='container flex justify-end '>
                 <div className='flex gap-5'>

@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${rakkas.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${rakkas.className} ${geistSans.variable} ${geistMono.variable} antialiased text-gray-700`}
       >
         <main>
           <Navbar />
