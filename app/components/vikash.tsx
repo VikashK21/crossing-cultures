@@ -1,9 +1,17 @@
-// import Image from "next/image";
+import Image from "next/image";
 
-export default function Vikash() {
+interface Props {
+    handleOnClick: (sectionID: string) => () => void
+}
+
+export default function Vikash(props: Props) {
+    const { handleOnClick } = props
     return (
         <div className="flex gap-2 text-lg flex-col align-middle justify-center">
-            <h4 className="font-semibold">Vikash</h4>
+            <div className="flex align-middle gap-2 cursor-pointer" onClick={handleOnClick("/#vikash")}>
+                <Image src="/avatarV.png" width={25} height={25} alt="avtr" />
+                <h4 className="font-semibold">Vikash</h4>
+            </div>
             <h3 className="font-bold">Indian diaspora in the Southeast Asian Architectural Styles</h3>
             <h4 className="font-semibold">
                 Introduction

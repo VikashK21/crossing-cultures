@@ -1,9 +1,17 @@
 import Image from "next/image";
 
-export default function Maghizhan() {
+interface Props {
+    handleOnClick: (sectionID: string) => () => void
+}
+
+export default function Maghizhan(props: Props) {
+    const { handleOnClick } = props
     return (
         <div className="flex gap-2 text-lg flex-col align-middle justify-center">
-            <h4 className="font-semibold">Maghizhan</h4>
+            <div className="flex align-middle gap-2 cursor-pointer" onClick={handleOnClick("/#maghizhan")}>
+                <Image src="/avatarM.png" width={25} height={25} alt="avtr" />
+                <h4 className="font-semibold">Maghizhan</h4>
+            </div>
             <h3 className='font-bold'>Blog 1: Indians in Australia</h3>
             <div>
                 A study suggests that some aboriginal Australians can trace almost 11% of their genes to Indian

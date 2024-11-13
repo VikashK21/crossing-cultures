@@ -30,23 +30,6 @@ export default function Intro() {
                 present how they continue to carry their native culture with them like food, religion, language
                 and traditions.
             </div>
-            <div>
-                <span className="font-medium">Rhea</span> will talk about the Roma diaspora in Europe (ancient times/pre-colonial).
-            </div>
-            <div>
-                <span className="font-medium">Nesara</span> will talk about the Sikhs in Canada (post-colonial).
-            </div>
-            <div>
-                <span className="font-medium">Maghizan</span> will talk about the Indian diaspora in the Caribbean Islands, and in Australia
-                (colonial).
-            </div>
-            <div>
-                <span className="font-medium">Aishupriya</span> will talk about the Gujaratis in East Africa (colonial).
-            </div>
-            <div>
-                <span className="font-medium">Vikash</span> will talk about the Indian diaspora in the Southeast Asia (colonial).
-            </div>
-
         </div>
     )
 }

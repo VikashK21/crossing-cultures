@@ -1,9 +1,18 @@
 import Image from "next/image";
 
-export default function Aishupriya() {
+interface Props {
+    handleOnClick: (sectionID: string) => () => void
+}
+
+export default function Aishupriya(props: Props) {
+    const { handleOnClick } = props
+
     return (
         <div className="flex gap-2 text-lg flex-col align-middle justify-center">
-            <h4 className="font-semibold">Aishupriya</h4>
+            <div className="flex align-middle gap-2 cursor-pointer" onClick={handleOnClick("/#aishupriya")}>
+                <Image src="/avatarA.png" width={25} height={25} alt="avtr" />
+                <h4 className="font-semibold">Aishupriya</h4>
+            </div>
             <h3 className='font-bold'>GUJARATI COMMUNITY IN EAST AFRICA</h3>
             <div>
                 The Gujarathi community is one of the descents of the west part of

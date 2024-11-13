@@ -1,0 +1,37 @@
+[
+  {
+    "avatar": "/avatarM.png",
+    "slug": "maghizhan",
+    "name": "Maghizhan",
+    "message": "talks about the Indian diaspora in the Caribbean Islands, and in Australia (colonial)",
+    "map": "/rheaMap.png"
+  },
+  {
+    "avatar": "/avatarR.png",
+    "slug": "rhea",
+    "name": "Rhea",
+    "message": "talks about the Roma diaspora in Europe (ancient times/pre-colonial)",
+    "map": "/rheaMap.png"
+  },
+  {
+    "avatar": "/avatarA.png",
+    "slug": "aishupriya",
+    "name": "Aishupriya",
+    "message": "talks about the Gujaratis in East Africa (colonial)",
+    "map": "/aishuMap.png"
+  },
+  {
+    "avatar": "/avatarN.png",
+    "slug": "nesara",
+    "name": "Nesara",
+    "message": "talks about the Sikhs in Canada (post-colonial)",
+    "map": "/nesaraMap.png"
+  },
+  {
+    "avatar": "/avatarV.png",
+    "slug": "vikash",
+    "name": "Vikash",
+    "message": "talks about the Indian diaspora in the Southeast Asia (colonial)",
+    "map": "/vikashMap.png"
+  }
+]

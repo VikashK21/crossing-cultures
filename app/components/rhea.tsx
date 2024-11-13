@@ -1,9 +1,17 @@
-// import Image from "next/image";
+import Image from "next/image";
 
-export default function Rhea() {
+interface Props {
+    handleOnClick: (sectionID: string) => () => void
+}
+
+export default function Rhea(props: Props) {
+    const { handleOnClick } = props
     return (
         <div className="flex gap-2 text-lg flex-col align-middle justify-center">
-            <h4 className="font-semibold">Rhea</h4>
+            <div className="flex align-middle gap-2 cursor-pointer" onClick={handleOnClick("/#rhea")}>
+                <Image src="/avatarR.png" width={25} height={25} alt="avtr" />
+                <h4 className="font-semibold">Rhea</h4>
+            </div>
             <h3 className="font-bold">The Roma in Europe:</h3>
             <div>
                 Of the nomadic communities in the world, the Roma or the Romani people are the most

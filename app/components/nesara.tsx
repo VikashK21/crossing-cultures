@@ -1,9 +1,17 @@
-// import Image from "next/image";
+import Image from "next/image";
 
-export default function Nesara() {
+interface Props {
+    handleOnClick: (sectionID: string) => () => void
+}
+
+export default function Nesara(props: Props) {
+    const { handleOnClick } = props
     return (
         <div className="flex gap-2 text-lg flex-col align-middle justify-center">
-            <h4 className="font-semibold">Nesara</h4>
+            <div className="flex align-middle gap-2 cursor-pointer" onClick={handleOnClick("/#nesara")}>
+                <Image src="/avatarN.png" width={25} height={25} alt="avtr" />
+                <h4 className="font-semibold">Nesara</h4>
+            </div>
             <h3 className="font-bold">INDIAN DIASPORA IN CANADA </h3>
             <div>
                 According to the Census data from 2021, Canada is home to around 1.8 million people of Indian heritage, accounting for more than 5% of the total population. During July of this year, Diljit Dosanjh, an Indian artist, made history when his concert sold out in the Rogers Centre in Toronto within hours. He was also greeted by the Prime Minister of Canada, Justin Trudeau, before the concert where the duo cheered ‘Punjabi aa gaye hoye’ (The Punjabis are here). This leads me to wonder about the ways in which the outflow of the Indian (mostly Punjabi Sikhs) diaspora gave rise to such exchange of cultures and influenced the current lives of the people and the country of Canada. In this blogpost, I aim to explore the causes and controversies involved in the migrations and the way the Sikhs have constructed an identity for themselves in Canada which is now a multicultural state.
