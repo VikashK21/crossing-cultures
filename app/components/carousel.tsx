@@ -26,8 +26,8 @@ export default function CarouselMaps(props: CarouselMapsProps) {
                             className="w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                         >
                             <div className="flex align-middle gap-2 px-14 cursor-pointer" onClick={handleOnClick("/#" + data.slug)}>
-                                <Image src={data.avatar} width={25} height={25} alt="avtr" />
-                                <div className="flex align-middle gap-1">
+                                <Image src={data.avatar} width={25} height={25} className="w-10 h-10 sm:w-8 sm:h-8" alt="avtr" />
+                                <div className="flex align-bottom gap-1">
                                     <h4 className="font-semibold text-lg">{data.name}</h4>
                                     <span className='pt-1'>{data.message}</span>
                                 </div>
