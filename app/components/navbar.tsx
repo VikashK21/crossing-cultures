@@ -10,7 +10,7 @@ export default function Navbar() {
     }
 
     return (
-        <div className='max-w-7xl sticky top-0 py-5 text-lg font-semibold flex px-5 bg-white z-20'>
+        <div className='max-[100%] sticky top-0 py-5 text-lg font-semibold flex px-5 bg-white z-20'>
             <div className='container'>
                 <button className='flex gap-2' onClick={handleOnClick("/")}>
                     <div>
